@@ -5,12 +5,13 @@ export default function ContactCard(props) {
   const [showAge, setShowAge] = useState(false);
     return(
         <div className="contact-card" >
-      <img src={props.avatarUrl} alt="profile-image"></img>
-      <div className="user-details">
+        <img src={props.avatarUrl} alt="profile"></img>
+        <div className="user-details">
         <p>Name: {props.name}</p>
-    <p>Email: {props.email}</p>
+        <p>Last Name: {props.lastName}</p>
+        <small>Email: {props.email}</small>
         <button onClick={ ()=> setShowAge(!showAge)}>Show Age</button>
-        {showAge && <p>Age: {props.age}</p>}
+        {showAge && <small>Age: {props.age}</small>}
       </div>
     </div>
     )

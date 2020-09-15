@@ -1,6 +1,6 @@
 .contact-card {
   display: flex;
-  padding: 10px;
+  padding: 1rem;
   color: #ffffff;
   background-color: rgb(42, 84, 104);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -8,10 +8,14 @@
   border-radius: 10px;
   max-width: 500px;
   max-height: 125px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .contact-card p {
+  margin-left: 10px;
+  margin-top: 0;
+}
+.contact-card small {
   margin-left: 10px;
   margin-top: 0;
 }
